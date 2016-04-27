@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
     s.homepage     = 'https://github.com/chenhuafeng/librtmp'
     s.source       = { :git => 'https://github.com/chenhuafeng/librtmp.git', :tag => s.version }
     s.summary      = 'librtmp build for iOS.'
-    s.header_dir   = 'RTMP'
     s.source_files = 'librtmp/*.h'
-    s.public_header_files = 'librtmp/rtmp.h'
-    s.vendored_libraries  = 'librtmp.a'
+    s.public_header_files  = 'librtmp/rtmp.h'
+    s.private_header_files = 'librtmp/*.h'
+    s.vendored_libraries   = 'librtmp.a'
 end
