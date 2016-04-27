@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
     s.authors      = { 'chenhuafeng' => 'https://github.com/chenhuafeng' }
     s.source       = { :git => "https://github.com/chenhuafeng/librtmp.git", :tag => s.version }
     s.platform     = :ios, "6.0"
-    s.source_files = 'librtmp/*.{h, c}'
+    s.source_files = 'librtmp/*.{h,c}'
     s.requires_arc = true
 end
