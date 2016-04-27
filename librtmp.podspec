@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
-    s.name         = "librtmp"
-    s.version      = "0.0.1"
-    s.summary      = "librtmp build for iOS."
-    s.homepage     = "https://github.com/chenhuafeng/librtmp"
+    s.name         = 'librtmp'
+    s.version      = '0.0.1'
+    s.author       = { 'chenhuafeng' => '459756460@qq.com' }
     s.license      = 'MIT'
-    s.authors      = { 'chenhuafeng' => 'https://github.com/chenhuafeng' }
-    s.source       = { :git => "https://github.com/chenhuafeng/librtmp.git", :tag => s.version }
-    s.platform     = :ios, "6.0"
+    s.homepage     = 'https://github.com/chenhuafeng/librtmp'
+    s.source       = { :git => 'https://github.com/chenhuafeng/librtmp.git', :tag => s.version }
+    s.summary      = 'librtmp build for iOS.'
     s.source_files = 'librtmp/*.h'
-    s.vendored_libraries  = 'librtmp.a'
-    s.requires_arc = true
+    s.header_dir = 'RTMP'
+
+    s.libraries    = 'rtmp'
 end
