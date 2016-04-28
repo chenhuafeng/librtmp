@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.source       = { :git => 'https://github.com/chenhuafeng/librtmp.git', :tag => s.version }
     s.summary      = 'librtmp build for iOS.'
     s.dependency 'OpenSSL'
-#    s.libraries    = 'z'
+    s.libraries    = 'z'
     s.source_files = 'librtmp/*.h'
     s.vendored_libraries   = 'librtmp.a'
 end
