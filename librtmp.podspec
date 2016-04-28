@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
     s.summary      = 'librtmp build for iOS.'
     s.dependency 'OpenSSL'
     s.libraries    = 'z'
-    s.prefix_header_contents = '#import <Foundation/Foundation.h>'
     s.source_files = 'librtmp/*.h'
     s.vendored_libraries = 'librtmp.a'
 end
